@@ -1,1 +1,47 @@
+.header {
+  background-image: linear-gradient(to right bottom, rgba(100, 177, 207, 0.6), rgba(64, 111, 182, 1));
+  min-height: 80vh;
+  padding-top: 5rem;
+  position: relative;
+  padding-bottom: 15rem;
 
+  &__headline {
+    text-align: center;
+    font-weight: 500;
+    color: $color-white-dark;
+    letter-spacing: 0.8rem;
+    padding: 8rem 8rem 0 8rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  &__subheadline {
+    text-align: center;
+    color: $color-white-dark;
+    font-family: "Yellowtail", cursive;
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+  }
+  &__button {
+    background-color: transparent;
+    color: $color-white-dark;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    border: none;
+    padding: 1.2rem 2rem;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all 0.5s;
+    &:hover {
+      letter-spacing: 0.5rem;
+    }
+    &:focus {
+      outline: none;
+      letter-spacing: 0.2rem;
+    }
+  }
+}

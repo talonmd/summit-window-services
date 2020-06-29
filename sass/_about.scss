@@ -1,0 +1,53 @@
+.about {
+  background-color: $color-white;
+  transform: skewY(-5deg);
+  margin-top: -8rem;
+  padding: 10rem 2rem;
+  &__container {
+    transform: skewY(5deg);
+    margin-top: 4rem;
+    padding: 4rem;
+    position: relative;
+  }
+  &__headline {
+    margin-top: -6rem;
+    margin-bottom: 8rem;
+    text-align: center;
+  }
+  &__button {
+    background-color: transparent;
+    color: $color-black;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    border: none;
+    padding: 1.2rem 2rem;
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 2rem;
+    transition: all 0.5s;
+    position: absolute;
+    left: 50%;
+    bottom: -4rem;
+    transform: translateX(-50%);
+    &:hover {
+      letter-spacing: 0.5rem;
+      color: lighten($color-black, 25%);
+    }
+    &:focus {
+      outline: none;
+      letter-spacing: 0.2rem;
+    }
+  }
+}
+
+.figure {
+  width: 30%;
+  float: right;
+  margin: 2rem 6rem 5rem 6rem;
+  &__image {
+    width: 100%;
+  }
+  &__caption {
+    color: grey;
+  }
+}
